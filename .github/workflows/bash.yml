@@ -32,7 +32,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: alanhimself/dockerfile-practice # change to your image
+          images: alanhimself/dockerfile-practice:2 # change to your image
           tags: |
             type=raw, value={{sha}},enable=${{github.ref_type != 'tag' }}
             type=raw, value=latest
